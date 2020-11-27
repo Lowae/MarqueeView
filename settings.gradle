@@ -1,0 +1,4 @@
+include ':lib:marquee_view'
+include ':lib'
+include ':app'
+rootProject.name = "MarqueeView"
