@@ -19,7 +19,7 @@
 1. 首先得到TextView的TextPaint，用于计算当前TextView样式下的空格rect大小，然后再用设置的GapWidth(两段前后间隔) / 单个空格的大小，这样得到来需要塞入的空格数（“ ”）。比如“首先假设文本为“呜呜呜呜呜呜呜呜呜呜””，设置的 **gap / BlnakWidth** 约等于 5,变成**“呜呜呜呜呜呜呜呜呜呜     呜呜呜呜呜呜呜呜呜呜”**。
 2. 对整个TextView进行translationX的动画，动画位移的距离应该等于“呜呜呜呜呜呜呜呜呜呜     ”的长度，这样当动画完成后，显示的是“呜呜呜呜呜呜呜呜呜呜”，这个时候重新开始动画。这样边实现了跑马灯的效果。
 
-<img src="https://github.com/Lowae/MarqueeView/edit/master/example.gif" width="50%">
+<img src="https://github.com/Lowae/MarqueeView/blob/master/example.gif" width="50%">
 
 ``` kotlin
     class MarqueeTextView : HorizontalScrollView {
